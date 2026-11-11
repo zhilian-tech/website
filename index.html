@@ -111,6 +111,31 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
 .facts p{margin:0; color:var(--ink-soft)}
 @media (max-width:820px){ .facts{grid-template-columns:1fr; gap:2rem} }
 
+/* photos: every frame matches its source ratio, so nothing is cropped */
+.photo{margin:0}
+.photo img{display:block; width:100%; height:auto; aspect-ratio:3/2; object-fit:cover; background:#E3E7EB}
+.photo figcaption{margin-top:.6rem; font-size:.92rem; color:var(--ink-soft)}
+.site .split{align-items:center}
+.kv{margin:2rem 0 0; display:grid; grid-template-columns:max-content 1fr; gap:.7rem 1.5rem; max-width:var(--measure)}
+.kv dt{color:var(--steel); font-size:.95rem}
+.kv dd{margin:0}
+
+/* products */
+.products{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:2rem; margin-top:3.5rem}
+.product{margin:0; background:#fff; border:1px solid var(--line); padding:1.5rem 1.5rem 1.75rem}
+.product img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:contain; max-width:26rem; margin:0 auto}
+.product h3{margin:1rem 0 .35rem; font-size:1.2rem; font-weight:650}
+.product p{margin:0; color:var(--ink-soft)}
+@media (max-width:720px){ .products{grid-template-columns:1fr} }
+
+/* production gallery */
+.gallery{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:2.5rem 2rem; margin-top:3.5rem}
+@media (max-width:720px){ .gallery{grid-template-columns:1fr; gap:2rem} }
+
+.q-grid{display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); gap:3rem 4rem; margin-top:3.5rem; align-items:start}
+.facts-stack{grid-template-columns:1fr; gap:2rem; margin-top:0}
+@media (max-width:820px){ .q-grid{grid-template-columns:1fr} }
+
 /* contact */
 .contact dl{margin:0; display:grid; grid-template-columns:max-content 1fr; gap:1rem 2rem}
 .contact dt{color:var(--steel); font-size:.95rem; padding-top:.15rem}
@@ -132,6 +157,7 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
       ZHILIAN
     </a>
     <nav class="nav" aria-label="Main">
+      <a href="#factory">Factory</a>
       <a href="#make">What we make</a>
       <a href="#oem">OEM and ODM</a>
       <a href="#quality">Quality</a>
@@ -159,11 +185,29 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
     </div>
   </section>
 
+  <section class="block site" id="factory">
+    <div class="wrap split">
+      <figure class="photo">
+        <img src="assets/img/factory-exterior.jpg" width="1600" height="1067" alt="Two-storey white factory building with long rows of windows under a clear sky">
+      </figure>
+      <div>
+        <h2>Our factory</h2>
+        <p class="lede">Engineering, assembly, testing and export packing happen under one roof in Jimo District, Qingdao. We design the heating and control systems ourselves and build them into finished equipment on our own lines.</p>
+        <dl class="kv">
+          <dt>Location</dt><dd>Jimo District, Qingdao, Shandong, China</dd>
+          <dt>In-house</dt><dd>Hardware and firmware engineering, assembly, safety and burn-in testing</dd>
+          <dt>Software</dt><dd>Six registered software copyrights</dd>
+          <dt>Shipping</dt><dd>Export packing for customers worldwide</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
   <section class="block" id="make">
     <div class="wrap split">
       <div>
         <h2>What we make</h2>
-        <p class="lede">Our core is precise, efficient induction heating paired with software we write ourselves. We build it into finished equipment, or into components for your product.</p>
+        <p class="lede">Our core is precise, efficient induction heating paired with control software we write ourselves. We build it into finished equipment, or into components for your product.</p>
       </div>
       <ul class="areas">
         <li>
@@ -171,18 +215,61 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
           <p>Coils, power boards and control logic tuned for fast, even heat and stable output under continuous use.</p>
         </li>
         <li>
-          <h3>Connected controls</h3>
-          <p>Embedded firmware, app and cloud connectivity, remote monitoring and over-the-air updates. We hold six registered software copyrights.</p>
+          <h3>Smart controls</h3>
+          <p>Touchscreen and one-touch interfaces, barcode and QR scanning, connected IoT controls and the embedded firmware behind them.</p>
         </li>
         <li>
           <h3>Commercial cooking appliances</h3>
-          <p>Countertop equipment for restaurants, convenience stores and self-service venues, designed for long shifts and easy cleaning.</p>
+          <p>Countertop equipment for convenience stores, restaurants and self-service venues, designed for long shifts and easy cleaning.</p>
         </li>
         <li>
           <h3>Custom smart appliances</h3>
           <p>New categories built on the same heating and control platform, from first concept to mass production.</p>
         </li>
       </ul>
+    </div>
+    <div class="wrap">
+      <div class="products">
+        <figure class="product">
+          <img src="assets/img/pro.jpg" width="1200" height="1200" alt="White countertop ramen cooker with a touchscreen, hot water spout and a bowl of noodles on its induction plate">
+          <figcaption>
+            <h3>Commercial induction ramen cooker</h3>
+            <p>Touchscreen, barcode scanner and built-in hot water. Cooks a bowl of noodles in its own paper bowl with induction heat, for stores and self-service counters.</p>
+          </figcaption>
+        </figure>
+        <figure class="product">
+          <img src="assets/img/studio.jpg" width="1200" height="1200" alt="Compact white ramen cooker with a top control panel, blue water tank and a bowl of noodles on its induction plate">
+          <figcaption>
+            <h3>Compact ramen cooker and hot water dispenser</h3>
+            <p>Two appliances in one: an induction ramen cooker and an instant hot water dispenser, run from a one-touch top panel.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="production">
+    <div class="wrap">
+      <h2>Inside our production</h2>
+      <p class="lede">Every machine is assembled, wired and tested by our own team before it is packed.</p>
+      <div class="gallery">
+        <figure class="photo">
+          <img src="assets/img/assembly-line.jpg" width="1600" height="1067" loading="lazy" alt="Workers seated along a long assembly line building white appliance housings">
+          <figcaption>Assembly line</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="assets/img/coil-assembly.jpg" width="1600" height="1067" loading="lazy" alt="Technician fitting an induction coil and cooling fan onto a power board">
+          <figcaption>Induction module assembly</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="assets/img/internal-wiring.jpg" width="1600" height="1067" loading="lazy" alt="Technician connecting wiring and water lines inside an open machine">
+          <figcaption>Wiring and water system</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="assets/img/aging-test-line.jpg" width="1600" height="1067" loading="lazy" alt="Rows of finished machines on a burn-in test line with an inspector holding a checklist">
+          <figcaption>Burn-in test line</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
@@ -195,7 +282,7 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
         <li><h3>Engineering</h3><p>We design or adapt the hardware, firmware and housing.</p></li>
         <li><h3>Prototypes</h3><p>Working samples for your testing and feedback.</p></li>
         <li><h3>Certification</h3><p>We prepare the product and documents for your market's requirements.</p></li>
-        <li><h3>Production</h3><p>Dedicated lines, incoming and final inspection, export packing.</p></li>
+        <li><h3>Production</h3><p>Assembly, testing and export packing on our own lines.</p></li>
       </ol>
       <p class="note">Minimum order, lead time and pricing depend on the project. <a href="mailto:info@zhilian-tech.com?subject=OEM%2FODM%20inquiry">Tell us about yours</a> and we will reply with a proposal.</p>
     </div>
@@ -205,19 +292,25 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
     <div class="wrap">
       <h2>Quality and compliance</h2>
       <p class="lede">We are the manufacturer of record for the equipment we produce, and we stand behind it in every market we ship to.</p>
-      <div class="facts">
+      <div class="q-grid">
+      <figure class="photo">
+        <img src="assets/img/safety-test.jpg" width="1600" height="1067" loading="lazy" alt="Technician running an electrical safety test on a finished machine">
+        <figcaption>Electrical safety testing on a finished machine</figcaption>
+      </figure>
+      <div class="facts facts-stack">
         <div>
           <h3>Built for the EU market</h3>
           <p>We manufacture CE-marked equipment and issue the EU Declaration of Conformity as the manufacturer.</p>
         </div>
         <div>
-          <h3>Inspected before it ships</h3>
-          <p>Each unit is checked on the line and again at final inspection before packing.</p>
+          <h3>Tested before it ships</h3>
+          <p>Finished machines go through electrical safety testing and run on our burn-in test line before packing.</p>
         </div>
         <div>
           <h3>Product safety contact</h3>
           <p>For safety questions or market surveillance requests, write to <a href="mailto:info@zhilian-tech.com">info@zhilian-tech.com</a>.</p>
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -226,12 +319,12 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
     <div class="wrap split">
       <div>
         <h2>Contact</h2>
-        <p class="lede">Write to us in English or Chinese.</p>
+        <p class="lede">Tell us what you want to build, or ask about our equipment.</p>
       </div>
       <dl>
         <dt>Email</dt><dd><a href="mailto:info@zhilian-tech.com">info@zhilian-tech.com</a></dd>
-        <dt>Phone</dt><dd><a href="tel:+8613730919077">+86 137 3091 9077</a></dd>
-        <dt>Address</dt><dd><span class="todo">[Street address]</span><br>Qingdao, Shandong, China</dd>
+        <dt>Phone</dt><dd><a href="tel:+864006376618">+86 400-637-6618</a></dd>
+        <dt>Address</dt><dd>No. 1-005, 188 Chenjia Village, Daxin Town<br>Jimo District, Qingdao, Shandong, China</dd>
         <dt>Company</dt><dd>Qingdao Zhilian Intelligent Catering Equipment Co., Ltd.</dd>
       </dl>
     </div>
