@@ -146,3 +146,20 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
 html[lang="zh-CN"] body{font-family:"Archivo","PingFang SC","Hiragino Sans GB","Noto Sans SC","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",sans-serif; line-height:1.75}
 html[lang="zh-CN"] .hero h1{font-stretch:100%; letter-spacing:.01em; line-height:1.18}
 html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
+
+/* certifications table */
+.certs-h{margin:4.5rem 0 1.25rem; font-size:1.35rem; font-weight:700}
+.certs{width:100%; border-collapse:collapse; font-size:1rem}
+.certs th,.certs td{text-align:left; vertical-align:top; padding:1rem 1.25rem 1rem 0; border-bottom:1px solid var(--line)}
+.certs thead th{font-size:.9rem; font-weight:600; color:var(--steel); border-bottom:2px solid var(--ink); padding-top:0}
+.certs tbody th{font-weight:700; white-space:nowrap}
+.certs td{color:var(--ink-soft)}
+.certs-note{margin:1.25rem 0 0; color:var(--ink-soft); font-size:.95rem}
+@media (max-width:760px){
+  .certs thead{display:none}
+  .certs,.certs tbody,.certs tr,.certs th,.certs td{display:block; width:100%}
+  .certs tr{padding:1.1rem 0; border-bottom:1px solid var(--line)}
+  .certs th,.certs td{border:0; padding:.15rem 0}
+  .certs tbody th{font-size:1.1rem; margin-bottom:.35rem; white-space:normal}
+  .certs td::before{content:attr(data-label); display:block; font-size:.8rem; color:var(--steel); margin-top:.45rem}
+}

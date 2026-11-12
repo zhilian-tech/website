@@ -158,6 +158,23 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
 html[lang="zh-CN"] body{font-family:"Archivo","PingFang SC","Hiragino Sans GB","Noto Sans SC","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",sans-serif; line-height:1.75}
 html[lang="zh-CN"] .hero h1{font-stretch:100%; letter-spacing:.01em; line-height:1.18}
 html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
+
+/* certifications table */
+.certs-h{margin:4.5rem 0 1.25rem; font-size:1.35rem; font-weight:700}
+.certs{width:100%; border-collapse:collapse; font-size:1rem}
+.certs th,.certs td{text-align:left; vertical-align:top; padding:1rem 1.25rem 1rem 0; border-bottom:1px solid var(--line)}
+.certs thead th{font-size:.9rem; font-weight:600; color:var(--steel); border-bottom:2px solid var(--ink); padding-top:0}
+.certs tbody th{font-weight:700; white-space:nowrap}
+.certs td{color:var(--ink-soft)}
+.certs-note{margin:1.25rem 0 0; color:var(--ink-soft); font-size:.95rem}
+@media (max-width:760px){
+  .certs thead{display:none}
+  .certs,.certs tbody,.certs tr,.certs th,.certs td{display:block; width:100%}
+  .certs tr{padding:1.1rem 0; border-bottom:1px solid var(--line)}
+  .certs th,.certs td{border:0; padding:.15rem 0}
+  .certs tbody th{font-size:1.1rem; margin-bottom:.35rem; white-space:normal}
+  .certs td::before{content:attr(data-label); display:block; font-size:.8rem; color:var(--steel); margin-top:.45rem}
+}
 </style>
 </head>
 <body>
@@ -262,18 +279,30 @@ html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
   <section class="block" id="quality">
     <div class="wrap">
       <h2>质量与合规</h2>
-      <p class="lede">我们是所生产设备的法定制造商，对销往每个市场的产品负责。</p>
+      <p class="lede">我们是所生产设备的法定制造商。设备已取得北美、欧盟、中国及 CB 体系的认证，并对销往每个市场的产品负责。</p>
       <div class="q-grid">
         <figure class="photo">
           <img src="../assets/img/safety-test.jpg" width="1600" height="1067" loading="lazy" alt="技术人员对整机进行电气安规测试">
           <figcaption>整机电气安规测试</figcaption>
         </figure>
         <div class="facts facts-stack">
-          <div><h3>面向欧盟市场</h3><p>我们生产带 CE 标志的设备，并以制造商身份签发欧盟符合性声明。</p></div>
           <div><h3>出厂前测试</h3><p>整机出厂前经过电气安规测试，并在老化测试线上运行后再包装。</p></div>
           <div><h3>产品安全联系</h3><p>产品安全问题或市场监管问询，请发邮件至 <a href="mailto:info@zhilian-tech.com">info@zhilian-tech.com</a>。</p></div>
         </div>
       </div>
+      <h3 class="certs-h">认证</h3>
+      <table class="certs">
+        <thead><tr><th scope="col">认证</th><th scope="col">市场</th><th scope="col">标准</th><th scope="col">设备</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">ETL 安全认证</th><td data-label="市场">美国、加拿大</td><td data-label="标准">UL 197；CSA C22.2 No. 109</td><td data-label="设备">商用电磁煮面机</td></tr>
+          <tr><th scope="row">ETL 卫生认证</th><td data-label="市场">美国、加拿大</td><td data-label="标准">NSF/ANSI 4</td><td data-label="设备">商用电磁煮面机</td></tr>
+          <tr><th scope="row">FCC</th><td data-label="市场">美国</td><td data-label="标准">按 47 CFR Part 15 测试符合</td><td data-label="设备">商用电磁煮面机</td></tr>
+          <tr><th scope="row">CE</th><td data-label="市场">欧盟</td><td data-label="标准">EN 60335 系列、电磁兼容及无线电指令</td><td data-label="设备">商用电磁煮面机；小型煮面机</td></tr>
+          <tr><th scope="row">CB</th><td data-label="市场">IECEE 成员国家和地区</td><td data-label="标准">IEC 60335-1、IEC 60335-2-9、IEC 60335-2-15、IEC 62233</td><td data-label="设备">商用电磁煮面机（220V）</td></tr>
+          <tr><th scope="row">CCC（3C）</th><td data-label="市场">中国</td><td data-label="标准">GB 4706 系列</td><td data-label="设备">商用电磁煮面机；小型煮面机（国内版）</td></tr>
+        </tbody>
+      </table>
+      <p class="certs-note">证书和检测报告可按需提供。</p>
     </div>
   </section>
 

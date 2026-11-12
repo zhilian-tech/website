@@ -158,6 +158,23 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
 html[lang="zh-CN"] body{font-family:"Archivo","PingFang SC","Hiragino Sans GB","Noto Sans SC","Noto Sans CJK SC","Source Han Sans SC","Microsoft YaHei",sans-serif; line-height:1.75}
 html[lang="zh-CN"] .hero h1{font-stretch:100%; letter-spacing:.01em; line-height:1.18}
 html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
+
+/* certifications table */
+.certs-h{margin:4.5rem 0 1.25rem; font-size:1.35rem; font-weight:700}
+.certs{width:100%; border-collapse:collapse; font-size:1rem}
+.certs th,.certs td{text-align:left; vertical-align:top; padding:1rem 1.25rem 1rem 0; border-bottom:1px solid var(--line)}
+.certs thead th{font-size:.9rem; font-weight:600; color:var(--steel); border-bottom:2px solid var(--ink); padding-top:0}
+.certs tbody th{font-weight:700; white-space:nowrap}
+.certs td{color:var(--ink-soft)}
+.certs-note{margin:1.25rem 0 0; color:var(--ink-soft); font-size:.95rem}
+@media (max-width:760px){
+  .certs thead{display:none}
+  .certs,.certs tbody,.certs tr,.certs th,.certs td{display:block; width:100%}
+  .certs tr{padding:1.1rem 0; border-bottom:1px solid var(--line)}
+  .certs th,.certs td{border:0; padding:.15rem 0}
+  .certs tbody th{font-size:1.1rem; margin-bottom:.35rem; white-space:normal}
+  .certs td::before{content:attr(data-label); display:block; font-size:.8rem; color:var(--steel); margin-top:.45rem}
+}
 </style>
 </head>
 <body>
@@ -262,18 +279,30 @@ html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
   <section class="block" id="quality">
     <div class="wrap">
       <h2>Quality and compliance</h2>
-      <p class="lede">We are the manufacturer of record for the equipment we produce, and we stand behind it in every market we ship to.</p>
+      <p class="lede">We are the manufacturer of record for the equipment we produce. It is certified for North America, the EU, China and CB Scheme countries, and we stand behind it in every market we ship to.</p>
       <div class="q-grid">
         <figure class="photo">
           <img src="assets/img/safety-test.jpg" width="1600" height="1067" loading="lazy" alt="Technician running an electrical safety test on a finished machine">
           <figcaption>Electrical safety testing on a finished machine</figcaption>
         </figure>
         <div class="facts facts-stack">
-          <div><h3>Built for the EU market</h3><p>We manufacture CE-marked equipment and issue the EU Declaration of Conformity as the manufacturer.</p></div>
           <div><h3>Tested before it ships</h3><p>Finished machines go through electrical safety testing and run on our burn-in test line before packing.</p></div>
           <div><h3>Product safety contact</h3><p>For safety questions or market surveillance requests, write to <a href="mailto:info@zhilian-tech.com">info@zhilian-tech.com</a>.</p></div>
         </div>
       </div>
+      <h3 class="certs-h">Certifications</h3>
+      <table class="certs">
+        <thead><tr><th scope="col">Certification</th><th scope="col">Market</th><th scope="col">Standards</th><th scope="col">Equipment</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">ETL Listed</th><td data-label="Market">United States, Canada</td><td data-label="Standards">UL 197; CSA C22.2 No. 109</td><td data-label="Equipment">Commercial ramen cooker</td></tr>
+          <tr><th scope="row">ETL Sanitation</th><td data-label="Market">United States, Canada</td><td data-label="Standards">NSF/ANSI 4</td><td data-label="Equipment">Commercial ramen cooker</td></tr>
+          <tr><th scope="row">FCC</th><td data-label="Market">United States</td><td data-label="Standards">Tested to 47 CFR Part 15</td><td data-label="Equipment">Commercial ramen cooker</td></tr>
+          <tr><th scope="row">CE</th><td data-label="Market">European Union</td><td data-label="Standards">EN 60335 series, EMC and radio directives</td><td data-label="Equipment">Commercial ramen cooker; compact ramen cooker</td></tr>
+          <tr><th scope="row">CB Scheme</th><td data-label="Market">IECEE member countries</td><td data-label="Standards">IEC 60335-1, IEC 60335-2-9, IEC 60335-2-15, IEC 62233</td><td data-label="Equipment">Commercial ramen cooker (220 V)</td></tr>
+          <tr><th scope="row">CCC</th><td data-label="Market">China</td><td data-label="Standards">GB 4706 series</td><td data-label="Equipment">Commercial ramen cooker; compact ramen cooker (China versions)</td></tr>
+        </tbody>
+      </table>
+      <p class="certs-note">Certificates and test reports are available on request.</p>
     </div>
   </section>
 
