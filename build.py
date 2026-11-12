@@ -13,6 +13,9 @@ STRINGS = {
  "en": {
   "lang": "en", "root": "", "other_href": "zh/", "other_lang": "zh-CN", "other_label": "中文",
   "title": "Zhilian | Smart cooking equipment manufacturer, OEM and ODM",
+  "alt_hero": "Two white countertop ramen cookers, each with a bowl of noodles on its induction plate",
+  "f1_h": "Certified for global markets", "f1_p": "Depending on the model, our equipment holds ETL, FCC, CE, CB and CCC certifications for markets from North America and Europe to China.",
+  "phone_row": "",
   "desc": "Zhilian designs and manufactures induction-heated, connected cooking equipment, with OEM and ODM production for brands worldwide.",
   "home_label": "Zhilian home", "nav_label": "Main",
   "nav_factory": "Factory", "nav_make": "What we make", "nav_oem": "OEM and ODM", "nav_quality": "Quality", "nav_contact": "Contact",
@@ -51,19 +54,10 @@ STRINGS = {
   "s5_h": "Production", "s5_p": "Assembly, testing and export packing on our own lines.",
   "note_a": "Minimum order, lead time and pricing depend on the project.", "note_link": "Tell us about yours", "note_b": " and we will reply with a proposal.",
   "oem_subject": "OEM%2FODM%20inquiry",
-  "q_h2": "Quality and compliance", "q_lede": "We are the manufacturer of record for the equipment we produce. It is certified for North America, the EU, China and CB Scheme countries, and we stand behind it in every market we ship to.",
+  "q_h2": "Quality and compliance", "q_lede": "We are the manufacturer of record for the equipment we produce, and we stand behind it in every market we ship to.",
   "alt_q": "Technician running an electrical safety test on a finished machine", "q_cap": "Electrical safety testing on a finished machine",
-  "f1_h": "Built for the EU market", "f1_p": "We manufacture CE-marked equipment and issue the EU Declaration of Conformity as the manufacturer.",
   "f2_h": "Tested before it ships", "f2_p": "Finished machines go through electrical safety testing and run on our burn-in test line before packing.",
   "f3_h": "Product safety contact", "f3_p": "For safety questions or market surveillance requests, write to", "f3_end": ".",
-  "certs_h": "Certifications", "th_cert": "Certification", "th_market": "Market", "th_std": "Standards", "th_eq": "Equipment",
-  "c1_name": "ETL Listed", "c1_mkt": "United States, Canada", "c1_std": "UL 197; CSA C22.2 No. 109", "c1_eq": "Commercial ramen cooker",
-  "c2_name": "ETL Sanitation", "c2_mkt": "United States, Canada", "c2_std": "NSF/ANSI 4", "c2_eq": "Commercial ramen cooker",
-  "c3_name": "FCC", "c3_mkt": "United States", "c3_std": "Tested to 47 CFR Part 15", "c3_eq": "Commercial ramen cooker",
-  "c4_name": "CE", "c4_mkt": "European Union", "c4_std": "EN 60335 series, EMC and radio directives", "c4_eq": "Commercial ramen cooker; compact ramen cooker",
-  "c5_name": "CB Scheme", "c5_mkt": "IECEE member countries", "c5_std": "IEC 60335-1, IEC 60335-2-9, IEC 60335-2-15, IEC 62233", "c5_eq": "Commercial ramen cooker (220 V)",
-  "c6_name": "CCC", "c6_mkt": "China", "c6_std": "GB 4706 series", "c6_eq": "Commercial ramen cooker; compact ramen cooker (China versions)",
-  "certs_note": "Certificates and test reports are available on request.",
   "c_h2": "Contact", "c_lede": "Tell us what you want to build, or ask about our equipment.",
   "c_email": "Email", "c_phone": "Phone", "c_addr": "Address", "c_co": "Company",
   "phone": "+86 137 3091 9077", "phone_tel": "+8613730919077",
@@ -73,6 +67,9 @@ STRINGS = {
  "zh": {
   "lang": "zh-CN", "root": "../", "other_href": "../", "other_lang": "en", "other_label": "EN",
   "title": "智链 | 智能烹饪设备制造，OEM 与 ODM",
+  "alt_hero": "两台白色台式煮面机，加热盘上各放着一碗面",
+  "f1_h": "面向全球市场的认证", "f1_p": "不同型号的设备已分别取得 ETL、FCC、CE、CB 和 CCC 等认证，覆盖北美、欧洲和中国等市场。",
+  "phone_row": "        <dt>电话</dt><dd><a href=\"tel:4006376618\">400-637-6618</a></dd>\n",
   "desc": "智链研发制造电磁加热的智能烹饪设备，为全球品牌提供 OEM 与 ODM 代工服务。",
   "home_label": "智链首页", "nav_label": "主导航",
   "nav_factory": "工厂", "nav_make": "产品与技术", "nav_oem": "OEM 与 ODM", "nav_quality": "质量", "nav_contact": "联系我们",
@@ -111,19 +108,10 @@ STRINGS = {
   "s5_h": "量产", "s5_p": "在自有产线上完成装配、测试和出口包装。",
   "note_a": "起订量、交期和价格视项目而定。", "note_link": "告诉我们您的项目", "note_b": "，我们会给您方案。",
   "oem_subject": "OEM%2FODM%20%E5%92%A8%E8%AF%A2",
-  "q_h2": "质量与合规", "q_lede": "我们是所生产设备的法定制造商。设备已取得北美、欧盟、中国及 CB 体系的认证，并对销往每个市场的产品负责。",
+  "q_h2": "质量与合规", "q_lede": "我们是所生产设备的法定制造商，对销往每个市场的产品负责。",
   "alt_q": "技术人员对整机进行电气安规测试", "q_cap": "整机电气安规测试",
-  "f1_h": "面向欧盟市场", "f1_p": "我们生产带 CE 标志的设备，并以制造商身份签发欧盟符合性声明。",
   "f2_h": "出厂前测试", "f2_p": "整机出厂前经过电气安规测试，并在老化测试线上运行后再包装。",
   "f3_h": "产品安全联系", "f3_p": "产品安全问题或市场监管问询，请发邮件至", "f3_end": "。",
-  "certs_h": "认证", "th_cert": "认证", "th_market": "市场", "th_std": "标准", "th_eq": "设备",
-  "c1_name": "ETL 安全认证", "c1_mkt": "美国、加拿大", "c1_std": "UL 197；CSA C22.2 No. 109", "c1_eq": "商用电磁煮面机",
-  "c2_name": "ETL 卫生认证", "c2_mkt": "美国、加拿大", "c2_std": "NSF/ANSI 4", "c2_eq": "商用电磁煮面机",
-  "c3_name": "FCC", "c3_mkt": "美国", "c3_std": "按 47 CFR Part 15 测试符合", "c3_eq": "商用电磁煮面机",
-  "c4_name": "CE", "c4_mkt": "欧盟", "c4_std": "EN 60335 系列、电磁兼容及无线电指令", "c4_eq": "商用电磁煮面机；小型煮面机",
-  "c5_name": "CB", "c5_mkt": "IECEE 成员国家和地区", "c5_std": "IEC 60335-1、IEC 60335-2-9、IEC 60335-2-15、IEC 62233", "c5_eq": "商用电磁煮面机（220V）",
-  "c6_name": "CCC（3C）", "c6_mkt": "中国", "c6_std": "GB 4706 系列", "c6_eq": "商用电磁煮面机；小型煮面机（国内版）",
-  "certs_note": "证书和检测报告可按需提供。",
   "c_h2": "联系我们", "c_lede": "告诉我们您想做的产品，或咨询我们的设备。",
   "c_email": "邮箱", "c_phone": "电话", "c_addr": "地址", "c_co": "公司",
   "phone": "400-637-6618", "phone_tel": "4006376618",
@@ -135,9 +123,8 @@ STRINGS = {
 def build():
     page = open(os.path.join(HERE, "src_page.html"), encoding="utf-8").read()
     css = open(os.path.join(HERE, "src_style.css"), encoding="utf-8").read()
-    spiral = open(os.path.join(HERE, "src_spiral.txt"), encoding="utf-8").read().strip()
     for code, s in STRINGS.items():
-        vals = dict(s, css=css.replace("{{root}}", s["root"]), spiral=spiral)
+        vals = dict(s, css=css.replace("{{root}}", s["root"]))
         out = re.sub(r"\{\{(\w+)\}\}", lambda m: vals[m.group(1)], page)
         out = out.replace("{{root}}", s["root"])
         left = re.findall(r"\{\{\w+\}\}", out)

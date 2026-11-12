@@ -40,14 +40,7 @@
         <p>{{hero_p}}</p>
         <a class="btn" href="mailto:info@zhilian-tech.com?subject={{mail_subject}}">{{hero_btn}}</a>
       </div>
-      <svg class="coil" viewBox="0 0 600 600" role="img" aria-label="{{coil_label}}">
-        <defs>
-          <linearGradient id="cu" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#D99A5E"/><stop offset=".55" stop-color="#B5652B"/><stop offset="1" stop-color="#7E4219"/>
-          </linearGradient>
-        </defs>
-        <path d="{{spiral}}" fill="none" stroke="url(#cu)" stroke-width="9" stroke-linecap="round" pathLength="1000" style="--len:1000"/>
-      </svg>
+      <img class="hero-img" src="{{root}}assets/img/hero-products.jpg" width="1600" height="1200" alt="{{alt_hero}}">
     </div>
   </section>
 
@@ -121,23 +114,11 @@
           <figcaption>{{q_cap}}</figcaption>
         </figure>
         <div class="facts facts-stack">
+          <div><h3>{{f1_h}}</h3><p>{{f1_p}}</p></div>
           <div><h3>{{f2_h}}</h3><p>{{f2_p}}</p></div>
           <div><h3>{{f3_h}}</h3><p>{{f3_p}} <a href="mailto:info@zhilian-tech.com">info@zhilian-tech.com</a>{{f3_end}}</p></div>
         </div>
       </div>
-      <h3 class="certs-h">{{certs_h}}</h3>
-      <table class="certs">
-        <thead><tr><th scope="col">{{th_cert}}</th><th scope="col">{{th_market}}</th><th scope="col">{{th_std}}</th><th scope="col">{{th_eq}}</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">{{c1_name}}</th><td data-label="{{th_market}}">{{c1_mkt}}</td><td data-label="{{th_std}}">{{c1_std}}</td><td data-label="{{th_eq}}">{{c1_eq}}</td></tr>
-          <tr><th scope="row">{{c2_name}}</th><td data-label="{{th_market}}">{{c2_mkt}}</td><td data-label="{{th_std}}">{{c2_std}}</td><td data-label="{{th_eq}}">{{c2_eq}}</td></tr>
-          <tr><th scope="row">{{c3_name}}</th><td data-label="{{th_market}}">{{c3_mkt}}</td><td data-label="{{th_std}}">{{c3_std}}</td><td data-label="{{th_eq}}">{{c3_eq}}</td></tr>
-          <tr><th scope="row">{{c4_name}}</th><td data-label="{{th_market}}">{{c4_mkt}}</td><td data-label="{{th_std}}">{{c4_std}}</td><td data-label="{{th_eq}}">{{c4_eq}}</td></tr>
-          <tr><th scope="row">{{c5_name}}</th><td data-label="{{th_market}}">{{c5_mkt}}</td><td data-label="{{th_std}}">{{c5_std}}</td><td data-label="{{th_eq}}">{{c5_eq}}</td></tr>
-          <tr><th scope="row">{{c6_name}}</th><td data-label="{{th_market}}">{{c6_mkt}}</td><td data-label="{{th_std}}">{{c6_std}}</td><td data-label="{{th_eq}}">{{c6_eq}}</td></tr>
-        </tbody>
-      </table>
-      <p class="certs-note">{{certs_note}}</p>
     </div>
   </section>
 
@@ -149,8 +130,7 @@
       </div>
       <dl>
         <dt>{{c_email}}</dt><dd><a href="mailto:info@zhilian-tech.com">info@zhilian-tech.com</a></dd>
-        <dt>{{c_phone}}</dt><dd><a href="tel:{{phone_tel}}">{{phone}}</a></dd>
-        <dt>{{c_addr}}</dt><dd>{{addr}}</dd>
+{{phone_row}}        <dt>{{c_addr}}</dt><dd>{{addr}}</dd>
         <dt>{{c_co}}</dt><dd>{{company}}</dd>
       </dl>
     </div>
