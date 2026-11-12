@@ -11,7 +11,7 @@ COMPANY_ZH = "青岛智链智能餐饮设备有限公司"
 
 STRINGS = {
  "en": {
-  "lang": "en", "root": "", "other_href": "zh/", "other_lang": "zh-CN", "other_label": "中文",
+  "lang": "en", "root": "", "brand": "ZHILIAN", "other_href": "zh/", "other_lang": "zh-CN", "other_label": "中文",
   "title": "Zhilian | Smart cooking equipment manufacturer, OEM and ODM",
   "alt_hero": "Two white countertop ramen cookers, each with a bowl of noodles on its induction plate",
   "f1_h": "Certified for global markets", "f1_p": "Depending on the model, our equipment holds ETL, FCC, CE, CB and CCC certifications for markets from North America and Europe to China.",
@@ -67,13 +67,13 @@ STRINGS = {
   "company": COMPANY_EN,
  },
  "zh": {
-  "lang": "zh-CN", "root": "../", "other_href": "../", "other_lang": "en", "other_label": "EN",
+  "lang": "zh-CN", "root": "../", "brand": "智链智能", "other_href": "../", "other_lang": "en", "other_label": "EN",
   "title": "智链 | 智能烹饪设备制造，OEM 与 ODM",
   "alt_hero": "两台白色台式煮面机，加热盘上各放着一碗面",
   "f1_h": "面向全球市场的认证", "f1_p": "不同型号的设备已分别取得 ETL、FCC、CE、CB 和 CCC 等认证，覆盖北美、欧洲和中国等市场。",
   "phone_row": "        <dt>电话</dt><dd><a href=\"tel:4006376618\">400-637-6618</a></dd>\n",
   "desc": "智链研发制造电磁加热的智能烹饪设备，为全球品牌提供 OEM 与 ODM 代工服务。",
-  "home_label": "智链首页", "nav_label": "主导航",
+  "home_label": "智链智能首页", "nav_label": "主导航",
   "nav_factory": "工厂", "nav_make": "产品与技术", "nav_oem": "OEM 与 ODM", "nav_quality": "质量", "nav_contact": "联系我们",
   "h1": "智能烹饪设备，自主研发制造。",
   "hero_p": "我们设计并制造电磁加热的智能联网设备，服务商用厨房，也为面向全球销售的品牌代工生产。",
