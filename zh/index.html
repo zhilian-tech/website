@@ -121,13 +121,13 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
 
 /* products: white band so the white-background photos sit seamlessly */
 .products-band{background:#fff}
-.products{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:3rem 4rem; margin-top:3rem}
+.products{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:3rem 3rem; margin-top:3rem}
 .product{margin:0}
 .product img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:contain; max-width:30rem; margin:0 auto}
 .product figcaption{border-top:3px solid var(--ink); padding-top:1.1rem; margin-top:.5rem}
 .product h3{margin:0 0 .4rem; font-size:1.2rem; font-weight:650}
 .product p{margin:0; color:var(--ink-soft); max-width:var(--measure)}
-@media (max-width:720px){ .products{grid-template-columns:1fr} }
+@media (max-width:760px){ .products{grid-template-columns:1fr; gap:3.5rem} .product img{max-width:24rem} }
 
 /* production gallery */
 .gallery{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:2.5rem 2rem; margin-top:3.5rem}
@@ -155,6 +155,22 @@ html[lang="zh-CN"] body{font-family:"Archivo","PingFang SC","Hiragino Sans GB","
 html[lang="zh-CN"] .hero h1{font-stretch:100%; letter-spacing:.01em; line-height:1.18}
 html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
 
+
+/* clients */
+.clients{border-bottom:1px solid var(--line); padding:2.75rem 0}
+.clients-h{font-size:.95rem; font-weight:500; color:var(--steel); margin:0 0 1.25rem; font-stretch:100%; letter-spacing:0}
+.client-list{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); align-items:center}
+.client-list li{text-align:center; padding:.6rem 1rem; border-left:1px solid var(--line); color:#3E4A5C; font-weight:700; font-size:1.35rem; line-height:1.2}
+.client-list li:first-child{border-left:0}
+.cl-lawson{letter-spacing:.12em}
+.cl-cu{font-size:1.6rem; letter-spacing:.04em}
+.cl-nu{font-size:1.05rem; font-weight:600; font-stretch:100%}
+@media (max-width:760px){
+  .client-list{grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:.5rem}
+  .client-list li:nth-child(3){border-left:0}
+  .client-list li{font-size:1.15rem}
+  .cl-nu{font-size:.95rem}
+}
 </style>
 </head>
 <body>
@@ -189,6 +205,18 @@ html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
     </div>
   </section>
 
+  <section class="clients" aria-labelledby="clients-h">
+    <div class="wrap">
+      <h2 id="clients-h" class="clients-h">我们的设备正在这些地方使用</h2>
+      <ul class="client-list">
+        <li class="cl-711">7-Eleven</li>
+        <li class="cl-lawson">LAWSON</li>
+        <li class="cl-cu">CU</li>
+        <li class="cl-nu">Northwestern University</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="block" id="make">
     <div class="wrap split">
       <div>
@@ -206,8 +234,8 @@ html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
 
   <section class="block products-band" id="equipment">
     <div class="wrap">
-      <h2>我们生产的设备</h2>
-      <p class="lede">以下是目前在我们产线上生产的两款设备。</p>
+      <h2>设备与耗材</h2>
+      <p class="lede">我们产线上生产的两款设备，以及与之配套的电磁加热纸碗。</p>
       <div class="products">
         <figure class="product">
           <img src="../assets/img/pro.jpg" width="1200" height="1200" loading="lazy" alt="白色台式煮面机，带触摸屏和出水口，加热盘上放着一碗面">
@@ -216,6 +244,10 @@ html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
         <figure class="product">
           <img src="../assets/img/studio.jpg" width="1200" height="1200" loading="lazy" alt="小巧的白色煮面机，顶部是操作面板，侧面是蓝色水箱，加热盘上放着一碗面">
           <figcaption><h3>小型煮面机兼即热饮水机</h3><p>两用一体：电磁煮面机加即热饮水机，顶部一键操作。</p></figcaption>
+        </figure>
+        <figure class="product">
+          <img src="../assets/img/bowls.jpg" width="1200" height="1200" loading="lazy" alt="一摞橙色图案纸碗，前面单独放着一只">
+          <figcaption><h3>电磁加热专用纸碗</h3><p>煮和吃用同一只碗，容量 42 oz（1250 ml），不用洗锅。也适用于其他兼容的电磁煮面机。已按美国 FDA 21 CFR 175.300、欧盟 1935/2004 和 LFGB 完成食品接触检测。每箱 300 只。</p></figcaption>
         </figure>
       </div>
     </div>

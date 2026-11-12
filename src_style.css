@@ -109,13 +109,13 @@ h2{margin:0 0 1rem; font-weight:750; font-stretch:115%; font-size:clamp(1.8rem,3
 
 /* products: white band so the white-background photos sit seamlessly */
 .products-band{background:#fff}
-.products{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:3rem 4rem; margin-top:3rem}
+.products{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:3rem 3rem; margin-top:3rem}
 .product{margin:0}
 .product img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:contain; max-width:30rem; margin:0 auto}
 .product figcaption{border-top:3px solid var(--ink); padding-top:1.1rem; margin-top:.5rem}
 .product h3{margin:0 0 .4rem; font-size:1.2rem; font-weight:650}
 .product p{margin:0; color:var(--ink-soft); max-width:var(--measure)}
-@media (max-width:720px){ .products{grid-template-columns:1fr} }
+@media (max-width:760px){ .products{grid-template-columns:1fr; gap:3.5rem} .product img{max-width:24rem} }
 
 /* production gallery */
 .gallery{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:2.5rem 2rem; margin-top:3.5rem}
@@ -143,3 +143,19 @@ html[lang="zh-CN"] body{font-family:"Archivo","PingFang SC","Hiragino Sans GB","
 html[lang="zh-CN"] .hero h1{font-stretch:100%; letter-spacing:.01em; line-height:1.18}
 html[lang="zh-CN"] h2{font-stretch:100%; letter-spacing:.02em}
 
+
+/* clients */
+.clients{border-bottom:1px solid var(--line); padding:2.75rem 0}
+.clients-h{font-size:.95rem; font-weight:500; color:var(--steel); margin:0 0 1.25rem; font-stretch:100%; letter-spacing:0}
+.client-list{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); align-items:center}
+.client-list li{text-align:center; padding:.6rem 1rem; border-left:1px solid var(--line); color:#3E4A5C; font-weight:700; font-size:1.35rem; line-height:1.2}
+.client-list li:first-child{border-left:0}
+.cl-lawson{letter-spacing:.12em}
+.cl-cu{font-size:1.6rem; letter-spacing:.04em}
+.cl-nu{font-size:1.05rem; font-weight:600; font-stretch:100%}
+@media (max-width:760px){
+  .client-list{grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:.5rem}
+  .client-list li:nth-child(3){border-left:0}
+  .client-list li{font-size:1.15rem}
+  .cl-nu{font-size:.95rem}
+}
