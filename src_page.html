@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{desc}}">
+<link rel="alternate" hreflang="en" href="https://zhilian-tech.com/">
+<link rel="alternate" hreflang="zh-CN" href="https://zhilian-tech.com/zh/">
+<link rel="alternate" hreflang="x-default" href="https://zhilian-tech.com/">
+<link rel="icon" href="{{root}}assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="{{root}}assets/archivo-latin-wdth-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>{{css}}</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="{{home_label}}">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="#B5652B" stroke-width="2.4"/><circle cx="14" cy="14" r="6.5" fill="none" stroke="#16233B" stroke-width="2.4"/></svg>
+      ZHILIAN
+    </a>
+    <div class="head-right">
+      <nav class="nav" aria-label="{{nav_label}}">
+        <a href="#factory">{{nav_factory}}</a>
+        <a href="#make">{{nav_make}}</a>
+        <a href="#oem">{{nav_oem}}</a>
+        <a href="#quality">{{nav_quality}}</a>
+        <a href="#contact">{{nav_contact}}</a>
+      </nav>
+      <a class="lang" href="{{other_href}}" hreflang="{{other_lang}}" lang="{{other_lang}}">{{other_label}}</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>{{h1}}</h1>
+        <p>{{hero_p}}</p>
+        <a class="btn" href="mailto:info@zhilian-tech.com?subject={{mail_subject}}">{{hero_btn}}</a>
+      </div>
+      <svg class="coil" viewBox="0 0 600 600" role="img" aria-label="{{coil_label}}">
+        <defs>
+          <linearGradient id="cu" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#D99A5E"/><stop offset=".55" stop-color="#B5652B"/><stop offset="1" stop-color="#7E4219"/>
+          </linearGradient>
+        </defs>
+        <path d="{{spiral}}" fill="none" stroke="url(#cu)" stroke-width="9" stroke-linecap="round" pathLength="1000" style="--len:1000"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="block site" id="factory">
+    <div class="wrap split">
+      <figure class="photo">
+        <img src="{{root}}assets/img/factory-exterior.jpg" width="1600" height="1067" alt="{{alt_exterior}}">
+      </figure>
+      <div>
+        <h2>{{factory_h2}}</h2>
+        <p class="lede">{{factory_lede}}</p>
+        <dl class="kv">
+          <dt>{{kv_loc}}</dt><dd>{{kv_loc_v}}</dd>
+          <dt>{{kv_inhouse}}</dt><dd>{{kv_inhouse_v}}</dd>
+          <dt>{{kv_sw}}</dt><dd>{{kv_sw_v}}</dd>
+          <dt>{{kv_ship}}</dt><dd>{{kv_ship_v}}</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="make">
+    <div class="wrap split">
+      <div>
+        <h2>{{make_h2}}</h2>
+        <p class="lede">{{make_lede}}</p>
+      </div>
+      <ul class="areas">
+        <li><h3>{{a1_h}}</h3><p>{{a1_p}}</p></li>
+        <li><h3>{{a2_h}}</h3><p>{{a2_p}}</p></li>
+        <li><h3>{{a3_h}}</h3><p>{{a3_p}}</p></li>
+        <li><h3>{{a4_h}}</h3><p>{{a4_p}}</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block products-band" id="equipment">
+    <div class="wrap">
+      <h2>{{eq_h2}}</h2>
+      <p class="lede">{{eq_lede}}</p>
+      <div class="products">
+        <figure class="product">
+          <img src="{{root}}assets/img/pro.jpg" width="1200" height="1200" loading="lazy" alt="{{alt_pro}}">
+          <figcaption><h3>{{p1_h}}</h3><p>{{p1_p}}</p></figcaption>
+        </figure>
+        <figure class="product">
+          <img src="{{root}}assets/img/studio.jpg" width="1200" height="1200" loading="lazy" alt="{{alt_studio}}">
+          <figcaption><h3>{{p2_h}}</h3><p>{{p2_p}}</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="production">
+    <div class="wrap">
+      <h2>{{prod_h2}}</h2>
+      <p class="lede">{{prod_lede}}</p>
+      <div class="gallery">
+        <figure class="photo"><img src="{{root}}assets/img/assembly-line.jpg" width="1600" height="1067" loading="lazy" alt="{{alt_g1}}"><figcaption>{{g1}}</figcaption></figure>
+        <figure class="photo"><img src="{{root}}assets/img/coil-assembly.jpg" width="1600" height="1067" loading="lazy" alt="{{alt_g2}}"><figcaption>{{g2}}</figcaption></figure>
+        <figure class="photo"><img src="{{root}}assets/img/internal-wiring.jpg" width="1600" height="1067" loading="lazy" alt="{{alt_g3}}"><figcaption>{{g3}}</figcaption></figure>
+        <figure class="photo"><img src="{{root}}assets/img/aging-test-line.jpg" width="1600" height="1067" loading="lazy" alt="{{alt_g4}}"><figcaption>{{g4}}</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block dark" id="oem">
+    <div class="wrap">
+      <h2>{{oem_h2}}</h2>
+      <p class="lede">{{oem_lede}}</p>
+      <ol class="steps">
+        <li><h3>{{s1_h}}</h3><p>{{s1_p}}</p></li>
+        <li><h3>{{s2_h}}</h3><p>{{s2_p}}</p></li>
+        <li><h3>{{s3_h}}</h3><p>{{s3_p}}</p></li>
+        <li><h3>{{s4_h}}</h3><p>{{s4_p}}</p></li>
+        <li><h3>{{s5_h}}</h3><p>{{s5_p}}</p></li>
+      </ol>
+      <p class="note">{{note_a}} <a href="mailto:info@zhilian-tech.com?subject={{oem_subject}}">{{note_link}}</a>{{note_b}}</p>
+    </div>
+  </section>
+
+  <section class="block" id="quality">
+    <div class="wrap">
+      <h2>{{q_h2}}</h2>
+      <p class="lede">{{q_lede}}</p>
+      <div class="q-grid">
+        <figure class="photo">
+          <img src="{{root}}assets/img/safety-test.jpg" width="1600" height="1067" loading="lazy" alt="{{alt_q}}">
+          <figcaption>{{q_cap}}</figcaption>
+        </figure>
+        <div class="facts facts-stack">
+          <div><h3>{{f1_h}}</h3><p>{{f1_p}}</p></div>
+          <div><h3>{{f2_h}}</h3><p>{{f2_p}}</p></div>
+          <div><h3>{{f3_h}}</h3><p>{{f3_p}} <a href="mailto:info@zhilian-tech.com">info@zhilian-tech.com</a>{{f3_end}}</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block contact" id="contact">
+    <div class="wrap split">
+      <div>
+        <h2>{{c_h2}}</h2>
+        <p class="lede">{{c_lede}}</p>
+      </div>
+      <dl>
+        <dt>{{c_email}}</dt><dd><a href="mailto:info@zhilian-tech.com">info@zhilian-tech.com</a></dd>
+        <dt>{{c_phone}}</dt><dd><a href="tel:{{phone_tel}}">{{phone}}</a></dd>
+        <dt>{{c_addr}}</dt><dd>{{addr}}</dd>
+        <dt>{{c_co}}</dt><dd>{{company}}</dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>&copy; 2026 {{company}}</span>
+    <span>zhilian-tech.com</span>
+  </div>
+</footer>
+</body>
+</html>
